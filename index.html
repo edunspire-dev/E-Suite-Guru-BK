@@ -63,8 +63,9 @@
             </div>
             
             <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-4xl mx-auto leading-relaxed">
-                Sistem Digital <span class="text-yellow-300 font-bold">E-Suite</span> yang Otomatis Mengidentifikasi Siswa Prioritas Tinggi 
-                <span class="text-red-300 font-bold">SEBELUM TERLAMBAT</span>
+                <span class="text-yellow-300 font-bold">HEMAT 15 JAM/MINGGU</span> dengan Sistem Digital E-Suite yang 
+                <span class="text-green-300 font-bold">MUDAH DIGUNAKAN</span> dan Otomatis Mengidentifikasi Siswa Prioritas Tinggi 
+                untuk <span class="text-red-300 font-bold">TINDAKAN CEPAT SEBELUM TERLAMBAT</span>
             </p>
             
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
@@ -278,23 +279,58 @@
                     <div class="order-2 md:order-1">
                         <div class="bg-blue-50 p-8 rounded-2xl">
                             <div class="bg-white p-6 rounded-xl shadow-lg">
-                                <h4 class="font-bold text-gray-800 mb-4 flex items-center">
-                                    <span class="text-blue-500 mr-2">📧</span>
-                                    Email Harian - Pukul 09:00
-                                </h4>
-                                <div class="space-y-4">
-                                    <div class="border-b pb-3">
-                                        <div class="font-semibold text-gray-800">Daftar Tugas Konseling Hari Ini</div>
-                                        <div class="text-sm text-gray-600">Senin, 15 Januari 2024</div>
+                                <!-- Email Header -->
+                                <div class="border-b pb-3 mb-4">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-bold text-gray-800 flex items-center">
+                                            <span class="text-blue-500 mr-2">📧</span>
+                                            BK Monitoring - Laporan Harian
+                                        </h4>
+                                        <div class="text-xs text-gray-500">09:00 WIB</div>
                                     </div>
-                                    <div class="space-y-2">
-                                        <div class="text-sm">
-                                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-semibold">URGENT</span>
-                                            <span class="ml-2">3 siswa membutuhkan konseling segera</span>
+                                    <div class="text-sm text-gray-600 mt-1">
+                                        Dari: system@bkmonitoring.id | Kepada: sari.wulandari@sman3jkt.sch.id
+                                    </div>
+                                </div>
+                                
+                                <!-- Email Content -->
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="font-semibold text-gray-800">🌅 Selamat Pagi, Bu Sari!</div>
+                                        <div class="text-sm text-gray-600">Berikut daftar tugas konseling untuk Senin, 15 Januari 2024</div>
+                                    </div>
+                                    
+                                    <!-- Priority Cases -->
+                                    <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-semibold">🚨 URGENT - 3 Siswa</span>
+                                            <span class="text-xs text-red-600">Butuh tindakan hari ini</span>
+                                        </div>
+                                        <div class="text-sm space-y-1">
+                                            <div>• Ahmad Rizki (X IPA 1) - Skor Emosi: 85</div>
+                                            <div>• Dewi Sartika (XI IPS 1) - Skor Emosi: 88</div>
+                                            <div>• Rudi Hartono (XII IPA 2) - Skor Minat: 25</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-semibold">⚠️ TINGGI - 5 Siswa</span>
+                                            <span class="text-xs text-orange-600">Jadwalkan minggu ini</span>
                                         </div>
                                         <div class="text-sm">
-                                            <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-semibold">TINGGI</span>
-                                            <span class="ml-2">5 siswa perlu follow-up minggu ini</span>
+                                            <div>• Siti Nurhaliza (XI IPS 2) - Skor Minat: 35</div>
+                                            <div>• + 4 siswa lainnya</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Quick Actions -->
+                                    <div class="bg-blue-50 p-3 rounded-lg">
+                                        <div class="text-sm font-semibold text-blue-700 mb-2">🎯 Aksi Cepat:</div>
+                                        <div class="text-xs text-blue-600 space-y-1">
+                                            <div>📞 Hubungi orang tua Ahmad & Dewi (prioritas tinggi)</div>
+                                            <div>📅 Buat jadwal konseling individual untuk 3 siswa urgent</div>
+                                            <div>📊 <a href="#" class="underline">Lihat dashboard lengkap</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -409,32 +445,49 @@
                         Dashboard Rekap Hasil
                     </h3>
                     <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl">
-                        <!-- Simulasi Screenshot Dashboard -->
-                        <div class="space-y-4">
-                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
+                        <!-- Header Dashboard -->
+                        <div class="bg-white p-4 rounded-lg mb-4 border-l-4 border-blue-500">
+                            <div class="flex justify-between items-center">
                                 <div>
-                                    <div class="font-semibold">Ahmad Rizki - X IPA 1</div>
-                                    <div class="text-sm text-gray-600">Emosi: 85 | Minat: 45</div>
+                                    <h5 class="font-bold text-gray-800">Dashboard BK - SMA Negeri 1</h5>
+                                    <p class="text-sm text-gray-600">Update terakhir: Hari ini, 14:30</p>
                                 </div>
-                                <div class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold text-red-600">7</div>
+                                    <div class="text-xs text-gray-500">Siswa Prioritas</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Simulasi Screenshot Dashboard -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm border-l-4 border-red-500">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">Ahmad Rizki - X IPA 1</div>
+                                    <div class="text-sm text-gray-600">📊 Emosi: 85 | 📚 Minat: 45 | ⏰ Deteksi: 09:15</div>
+                                    <div class="text-xs text-red-600 mt-1">⚠️ Butuh konseling dalam 24 jam</div>
+                                </div>
+                                <div class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
                                     URGENT
                                 </div>
                             </div>
                             
-                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
-                                <div>
-                                    <div class="font-semibold">Siti Nurhaliza - XI IPS 2</div>
-                                    <div class="text-sm text-gray-600">Emosi: 65 | Minat: 35</div>
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm border-l-4 border-orange-500">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">Siti Nurhaliza - XI IPS 2</div>
+                                    <div class="text-sm text-gray-600">📊 Emosi: 65 | 📚 Minat: 35 | ⏰ Deteksi: 10:22</div>
+                                    <div class="text-xs text-orange-600 mt-1">📅 Jadwalkan konseling minggu ini</div>
                                 </div>
                                 <div class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">
                                     TINGGI
                                 </div>
                             </div>
                             
-                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
-                                <div>
-                                    <div class="font-semibold">Budi Santoso - XII IPA 3</div>
-                                    <div class="text-sm text-gray-600">Emosi: 55 | Minat: 60</div>
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm border-l-4 border-blue-500">
+                                <div class="flex-1">
+                                    <div class="font-semibold text-gray-800">Budi Santoso - XII IPA 3</div>
+                                    <div class="text-sm text-gray-600">📊 Emosi: 55 | 📚 Minat: 60 | ⏰ Deteksi: 11:45</div>
+                                    <div class="text-xs text-blue-600 mt-1">✅ Monitoring rutin</div>
                                 </div>
                                 <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
                                     SEDANG
@@ -442,16 +495,36 @@
                             </div>
                         </div>
                         
+                        <!-- Enhanced Analytics -->
                         <div class="mt-6 p-4 bg-white rounded-lg">
-                            <div class="text-sm font-semibold text-gray-700 mb-2">Grafik Tren Mingguan</div>
-                            <div class="flex items-end space-x-2 h-20">
-                                <div class="bg-red-400 w-8 h-16 rounded-t"></div>
-                                <div class="bg-orange-400 w-8 h-12 rounded-t"></div>
-                                <div class="bg-yellow-400 w-8 h-8 rounded-t"></div>
-                                <div class="bg-green-400 w-8 h-6 rounded-t"></div>
-                                <div class="bg-blue-400 w-8 h-10 rounded-t"></div>
+                            <div class="flex justify-between items-center mb-3">
+                                <div class="text-sm font-semibold text-gray-700">📈 Analisis Tren Real-Time</div>
+                                <div class="text-xs text-green-600 bg-green-100 px-2 py-1 rounded">Live Update</div>
                             </div>
-                            <div class="text-xs text-gray-500 mt-2">Sen Sel Rab Kam Jum</div>
+                            <div class="grid grid-cols-5 gap-2 h-20 items-end">
+                                <div class="bg-red-400 rounded-t relative" style="height: 80%">
+                                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-red-600 font-semibold">12</div>
+                                </div>
+                                <div class="bg-orange-400 rounded-t relative" style="height: 60%">
+                                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-orange-600 font-semibold">9</div>
+                                </div>
+                                <div class="bg-yellow-400 rounded-t relative" style="height: 40%">
+                                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-yellow-600 font-semibold">6</div>
+                                </div>
+                                <div class="bg-green-400 rounded-t relative" style="height: 30%">
+                                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-green-600 font-semibold">4</div>
+                                </div>
+                                <div class="bg-blue-400 rounded-t relative" style="height: 50%">
+                                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-600 font-semibold">7</div>
+                                </div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-3 grid grid-cols-5 text-center">
+                                <span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span>
+                            </div>
+                            <div class="mt-3 p-2 bg-blue-50 rounded text-xs">
+                                <span class="text-blue-700 font-semibold">💡 Insight:</span> 
+                                <span class="text-gray-700">Kasus emosi tinggi meningkat 25% hari ini. Rekomendasikan sesi grup manajemen stres.</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -512,6 +585,65 @@
                 </div>
             </div>
             
+            <!-- Testimonials Section -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">
+                    Apa Kata Guru BK yang Sudah Menggunakan?
+                </h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                S
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-gray-800">Ibu Sari Wulandari, S.Pd</div>
+                                <div class="text-sm text-gray-600">Guru BK - SMAN 3 Jakarta</div>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-700 italic">
+                            "Dulu saya butuh 2 hari untuk memilah 300 angket siswa. Sekarang dalam 30 menit sudah tahu siapa yang prioritas. 
+                            <span class="font-semibold text-blue-600">Hemat waktu luar biasa!</span> Bisa fokus konseling daripada administrasi."
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                A
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-gray-800">Bapak Ahmad Fauzi, M.Pd</div>
+                                <div class="text-sm text-gray-600">Koordinator BK - SMAN 1 Bandung</div>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-700 italic">
+                            "Sistem ini <span class="font-semibold text-green-600">menyelamatkan 3 siswa</span> yang hampir putus sekolah karena depresi. 
+                            Alert otomatis membantu kami bertindak cepat sebelum terlambat. Investasi terbaik untuk sekolah!"
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                R
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-gray-800">Ibu Rina Kusuma, S.Psi</div>
+                                <div class="text-sm text-gray-600">Psikolog Sekolah - SMA Swasta Surabaya</div>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
+                        <p class="text-gray-700 italic">
+                            "Setup cuma 20 menit, langsung jalan! <span class="font-semibold text-purple-600">Mudah banget digunakan</span>, 
+                            bahkan guru senior yang gaptek bisa pakai. Email harian sangat membantu planning konseling."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Trust Indicators -->
             <div class="bg-white p-8 rounded-2xl shadow-lg">
                 <div class="grid md:grid-cols-4 gap-8 text-center">
@@ -776,5 +908,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989ae1ccb65ece3d',t:'MTc1OTY0NTk0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989af03f2384411c',t:'MTc1OTY0NjU0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
