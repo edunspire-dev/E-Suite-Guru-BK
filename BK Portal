@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Monitoring Intervensi Dini - Stop Lelah Membaca Angket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+            }
+            50% { 
+                transform: scale(1.02);
+                box-shadow: 0 0 30px rgba(251, 191, 36, 0.8);
+            }
+        }
+        .slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- HEADER - Attention & Problem -->
+    <section class="gradient-bg hero-pattern min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="max-w-5xl mx-auto text-center text-white relative z-10">
+            <div class="mb-8">
+                <span class="inline-block bg-red-500 text-white px-6 py-3 rounded-full text-sm font-bold mb-6 animate-bounce">
+                    🚨 URGENT: Siswa Krisis Terlewat Setiap Hari!
+                </span>
+            </div>
+            
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight slide-up">
+                <span class="text-yellow-300">STOP</span> LELAH<br>
+                MEMBACA ANGKET
+            </h1>
+            
+            <div class="text-2xl md:text-3xl font-bold mb-8 text-yellow-200">
+                Mulai Konseling!
+            </div>
+            
+            <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-4xl mx-auto leading-relaxed">
+                Sistem Digital <span class="text-yellow-300 font-bold">E-Suite</span> yang Otomatis Mengidentifikasi Siswa Prioritas Tinggi 
+                <span class="text-red-300 font-bold">SEBELUM TERLAMBAT</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+                <button class="pulse-glow bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-5 px-10 rounded-xl text-xl transition-all duration-300 shadow-2xl">
+                    Dapatkan Angket GRATIS
+                </button>
+                <button class="border-3 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-blue-900 font-bold py-5 px-10 rounded-xl text-xl transition-all duration-300">
+                    Lihat Demo Sistem
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-yellow-300">80%</div>
+                    <div class="text-sm opacity-80">Waktu untuk Administrasi</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-red-300">20%</div>
+                    <div class="text-sm opacity-80">Waktu untuk Konseling</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-green-300">SOLUSI</div>
+                    <div class="text-sm opacity-80">Balik Rasio Ini!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I. VALIDASI RASA SAKIT -->
+    <section class="py-20 bg-red-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-red-700 mb-8">
+                    Apakah Ini Yang Anda Rasakan Setiap Hari?
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-500">
+                        <h3 class="text-2xl font-bold text-red-700 mb-4 flex items-center">
+                            <span class="text-3xl mr-3">😰</span>
+                            80% Waktu untuk Administrasi?
+                        </h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Menghabiskan berjam-jam memilah ratusan angket manual, mencari siswa yang membutuhkan perhatian, 
+                            sementara waktu konseling yang seharusnya menyelamatkan siswa malah tersita habis?
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-500">
+                        <h3 class="text-2xl font-bold text-red-700 mb-4 flex items-center">
+                            <span class="text-3xl mr-3">⚠️</span>
+                            Kasus Krisis Terlewat?
+                        </h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Siswa dengan skor emosi tinggi (>80) atau minat belajar rendah (<40) tidak terdeteksi tepat waktu 
+                            karena data terlambat diproses. Akibatnya: intervensi terlambat, masalah membesar.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-100 to-orange-100 p-8 rounded-2xl">
+                    <div class="text-center mb-8">
+                        <h4 class="text-2xl font-bold text-red-800 mb-4">Konsekuensi Fatal:</h4>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow">
+                            <div class="text-2xl">📉</div>
+                            <div>
+                                <div class="font-semibold text-red-700">Prestasi Siswa Menurun</div>
+                                <div class="text-sm text-gray-600">Intervensi terlambat = masalah kronis</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow">
+                            <div class="text-2xl">😔</div>
+                            <div>
+                                <div class="font-semibold text-red-700">Burnout Guru BK</div>
+                                <div class="text-sm text-gray-600">Kerja keras tanpa hasil optimal</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow">
+                            <div class="text-2xl">🚨</div>
+                            <div>
+                                <div class="font-semibold text-red-700">Kasus Darurat Tak Terprediksi</div>
+                                <div class="text-sm text-gray-600">Siswa krisis tidak teridentifikasi dini</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- II. MEMPERKENALKAN SOLUSI -->
+    <section class="py-20 bg-blue-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                    Solusi: <span class="text-yellow-300">BK Monitoring Intervensi Dini</span>
+                </h2>
+                <p class="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto">
+                    Jembatan Digital-Manual yang menggabungkan <span class="text-yellow-300 font-semibold">penilaian profesional Anda</span> 
+                    dengan kekuatan otomatisasi Google Sheets dan Apps Script
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="bg-yellow-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🧠</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Keahlian Profesional Anda</h3>
+                    <p class="opacity-80">Sistem tidak menggantikan, tapi memperkuat intuisi dan pengalaman Anda sebagai konselor</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-yellow-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Otomatisasi Cerdas</h3>
+                    <p class="opacity-80">Google Sheets + Apps Script bekerja 24/7 menganalisis data dan mengirim alert prioritas</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-yellow-400 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Intervensi Tepat Waktu</h3>
+                    <p class="opacity-80">Deteksi dini + tindakan cepat = pencegahan masalah sebelum menjadi krisis</p>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4 text-yellow-300">Smart-Hybrid System</h3>
+                <p class="text-lg opacity-90">
+                    Bukan sekadar digitalisasi angket. Ini adalah <strong>sistem cerdas</strong> yang memahami pola perilaku siswa 
+                    dan memberikan rekomendasi intervensi berdasarkan data real-time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- III. FITUR UTAMA (The Magic) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+                    Fitur Otomatisasi yang Mengubah Segalanya
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Tiga fitur utama yang akan mengubah cara Anda bekerja sebagai Guru BK
+                </p>
+            </div>
+            
+            <div class="space-y-16">
+                <!-- Fitur 1 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="bg-red-100 inline-block p-4 rounded-xl mb-6">
+                            <span class="text-4xl">🚨</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            1. Pemicu Prioritas Otomatis
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Sistem mendeteksi <span class="font-bold text-red-600">Skor Emosi Tinggi (>80)</span> 
+                            ATAU <span class="font-bold text-orange-600">Skor Minat Rendah (<40)</span> secara real-time.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Alert otomatis dalam 5 detik setelah angket diisi</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Kategorisasi prioritas: URGENT, TINGGI, SEDANG</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Tidak ada siswa krisis yang terlewat lagi</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl">
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                                <span class="text-red-500 mr-2">🚨</span>
+                                Alert Prioritas Real-Time
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="p-3 bg-red-100 border-l-4 border-red-500 rounded">
+                                    <div class="font-semibold text-red-700">URGENT - Ahmad Rizki</div>
+                                    <div class="text-sm text-red-600">Skor Emosi: 85 | Deteksi: 09:15</div>
+                                </div>
+                                <div class="p-3 bg-orange-100 border-l-4 border-orange-500 rounded">
+                                    <div class="font-semibold text-orange-700">TINGGI - Siti Nurhaliza</div>
+                                    <div class="text-sm text-orange-600">Skor Minat: 35 | Deteksi: 09:22</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fitur 2 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-blue-50 p-8 rounded-2xl">
+                            <div class="bg-white p-6 rounded-xl shadow-lg">
+                                <h4 class="font-bold text-gray-800 mb-4 flex items-center">
+                                    <span class="text-blue-500 mr-2">📧</span>
+                                    Email Harian - Pukul 09:00
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="border-b pb-3">
+                                        <div class="font-semibold text-gray-800">Daftar Tugas Konseling Hari Ini</div>
+                                        <div class="text-sm text-gray-600">Senin, 15 Januari 2024</div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="text-sm">
+                                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-semibold">URGENT</span>
+                                            <span class="ml-2">3 siswa membutuhkan konseling segera</span>
+                                        </div>
+                                        <div class="text-sm">
+                                            <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-semibold">TINGGI</span>
+                                            <span class="ml-2">5 siswa perlu follow-up minggu ini</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 md:order-2">
+                        <div class="bg-blue-100 inline-block p-4 rounded-xl mb-6">
+                            <span class="text-4xl">📧</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            2. Laporan Harian ke Email
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Dapatkan <span class="font-bold text-blue-600">Daftar Tugas Konseling Harian</span> 
+                            di email Anda setiap pukul 09.00. Tidak perlu lagi membuka spreadsheet!
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Ringkasan prioritas siswa otomatis setiap pagi</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Link langsung ke data detail siswa</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Rencana tindakan yang sudah disiapkan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fitur 3 -->
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="bg-purple-100 inline-block p-4 rounded-xl mb-6">
+                            <span class="text-4xl">📊</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">
+                            3. Analisis Tren Visual
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            Grafik otomatis menunjukkan <span class="font-bold text-purple-600">kenaikan/penurunan kasus bulanan</span>. 
+                            Lihat pola dan prediksi kebutuhan intervensi ke depan.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Dashboard visual yang mudah dipahami</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Laporan bulanan untuk kepala sekolah</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <span class="text-gray-700">Prediksi tren masalah siswa</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl">
+                        <div class="bg-white p-6 rounded-xl shadow-lg">
+                            <h4 class="font-bold text-gray-800 mb-4">📈 Dashboard Tren Bulanan</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Kasus Emosi Tinggi</span>
+                                    <span class="text-red-600 font-semibold">↗ +15%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                                
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Minat Belajar Rendah</span>
+                                    <span class="text-green-600 font-semibold">↘ -8%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                                
+                                <div class="text-xs text-gray-500 mt-4">
+                                    Prediksi: Fokus intervensi pada manajemen emosi bulan depan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IV. BUKTI & KOMPONEN -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+                    Lihat Sistem Bekerja Nyata
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Screenshot Dashboard dan komponen lengkap yang akan Anda dapatkan
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- Screenshot Dashboard -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                        Dashboard Rekap Hasil
+                    </h3>
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-xl">
+                        <!-- Simulasi Screenshot Dashboard -->
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
+                                <div>
+                                    <div class="font-semibold">Ahmad Rizki - X IPA 1</div>
+                                    <div class="text-sm text-gray-600">Emosi: 85 | Minat: 45</div>
+                                </div>
+                                <div class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold">
+                                    URGENT
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
+                                <div>
+                                    <div class="font-semibold">Siti Nurhaliza - XI IPS 2</div>
+                                    <div class="text-sm text-gray-600">Emosi: 65 | Minat: 35</div>
+                                </div>
+                                <div class="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-semibold">
+                                    TINGGI
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center bg-white p-3 rounded-lg shadow-sm">
+                                <div>
+                                    <div class="font-semibold">Budi Santoso - XII IPA 3</div>
+                                    <div class="text-sm text-gray-600">Emosi: 55 | Minat: 60</div>
+                                </div>
+                                <div class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
+                                    SEDANG
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-white rounded-lg">
+                            <div class="text-sm font-semibold text-gray-700 mb-2">Grafik Tren Mingguan</div>
+                            <div class="flex items-end space-x-2 h-20">
+                                <div class="bg-red-400 w-8 h-16 rounded-t"></div>
+                                <div class="bg-orange-400 w-8 h-12 rounded-t"></div>
+                                <div class="bg-yellow-400 w-8 h-8 rounded-t"></div>
+                                <div class="bg-green-400 w-8 h-6 rounded-t"></div>
+                                <div class="bg-blue-400 w-8 h-10 rounded-t"></div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-2">Sen Sel Rab Kam Jum</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Komponen Lengkap -->
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">📋</span>
+                            Angket Validasi (PDF)
+                        </h4>
+                        <p class="text-gray-600 mb-4">
+                            Angket tervalidasi secara psikologis untuk mengukur tingkat emosi dan minat belajar siswa
+                        </p>
+                        <div class="flex items-center space-x-2 text-sm text-green-600">
+                            <span>✓</span>
+                            <span>Siap cetak dan distribusi</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">⚙️</span>
+                            Apps Script Siap Pakai
+                        </h4>
+                        <p class="text-gray-600 mb-4">
+                            Kode otomatisasi lengkap untuk Google Sheets yang langsung bisa digunakan
+                        </p>
+                        <div class="space-y-2 text-sm text-green-600">
+                            <div class="flex items-center space-x-2">
+                                <span>✓</span>
+                                <span>Auto-trigger prioritas</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span>✓</span>
+                                <span>Email notification</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span>✓</span>
+                                <span>Dashboard otomatis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🎓</span>
+                            Panduan Setup Lengkap
+                        </h4>
+                        <p class="text-gray-600 mb-4">
+                            Video tutorial step-by-step dan dokumentasi lengkap untuk implementasi
+                        </p>
+                        <div class="flex items-center space-x-2 text-sm text-green-600">
+                            <span>✓</span>
+                            <span>Setup dalam 30 menit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <div class="grid md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-blue-600 mb-2">150+</div>
+                        <div class="text-gray-600">Guru BK Pengguna</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-green-600 mb-2">5,000+</div>
+                        <div class="text-gray-600">Siswa Termonitor</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-purple-600 mb-2">92%</div>
+                        <div class="text-gray-600">Akurasi Deteksi</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+                        <div class="text-gray-600">Monitoring Otomatis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- V. CALL TO ACTION -->
+    <section class="py-20 gradient-bg hero-pattern">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">
+                Pilih Langkah Anda Sekarang
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-12">
+                Mulai dengan gratis atau langsung upgrade ke solusi lengkap
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Lead Magnet (Gratis) -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8 border-2 border-yellow-400">
+                    <div class="text-4xl mb-4">🎁</div>
+                    <h3 class="text-2xl font-bold text-yellow-300 mb-4">GRATIS</h3>
+                    <h4 class="text-xl font-semibold text-white mb-6">
+                        Angket Minat & Emosi (PDF)
+                    </h4>
+                    <ul class="text-left space-y-3 text-white opacity-90 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Angket tervalidasi psikologis</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Panduan interpretasi skor</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Template laporan hasil</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Bonus: Checklist intervensi</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105">
+                        Download Gratis Sekarang
+                    </button>
+                    <p class="text-sm text-white opacity-70 mt-3">
+                        Masukkan email, langsung download
+                    </p>
+                </div>
+                
+                <!-- Produk Berbayar (Premium) -->
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-8 border-2 border-white relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                            PALING POPULER
+                        </span>
+                    </div>
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold text-yellow-300 mb-4">PREMIUM</h3>
+                    <h4 class="text-xl font-semibold text-white mb-6">
+                        Solusi E-Suite BK Lengkap
+                    </h4>
+                    <ul class="text-left space-y-3 text-white opacity-90 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Semua fitur GRATIS +</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Google Sheets otomatis</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Apps Script siap pakai</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Email notification harian</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Dashboard visual real-time</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-green-400">✓</span>
+                            <span>Support setup & training</span>
+                        </li>
+                    </ul>
+                    <button class="w-full pulse-glow bg-white text-blue-900 font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 transform hover:scale-105">
+                        Upgrade ke Premium
+                    </button>
+                    <p class="text-sm text-white opacity-70 mt-3">
+                        Setup dalam 30 menit, garansi 30 hari
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6">
+                <p class="text-white text-lg">
+                    <span class="font-bold">Jaminan:</span> Jika dalam 30 hari sistem tidak menghemat minimal 5 jam/minggu waktu Anda, 
+                    uang kembali 100% tanpa pertanyaan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">BK Monitoring</h3>
+                    <p class="text-gray-400 text-sm">
+                        Solusi digital untuk Guru BK yang ingin fokus pada konseling, bukan administrasi.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Produk</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Angket Gratis</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">E-Suite Premium</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Training & Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Dukungan</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Panduan Setup</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Video Tutorial</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>📧 support@bkmonitoring.id</li>
+                        <li>📱 +62 812-3456-7890</li>
+                        <li>💬 WhatsApp Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 BK Monitoring Intervensi Dini. Membantu Guru BK Indonesia sejak 2023.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Button interactions
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (this.textContent.includes('Download Gratis') || this.textContent.includes('Dapatkan Angket GRATIS')) {
+                    // Lead magnet action
+                    const email = prompt('Masukkan email Anda untuk mendapatkan Angket Minat & Emosi (PDF) GRATIS:');
+                    if (email && email.includes('@')) {
+                        alert(`Terima kasih! Angket PDF telah dikirim ke ${email}. Cek inbox/spam folder Anda dalam 5 menit.`);
+                    } else if (email) {
+                        alert('Email tidak valid. Silakan masukkan email yang benar.');
+                    }
+                } else if (this.textContent.includes('Upgrade ke Premium')) {
+                    // Premium product action
+                    alert('Anda akan diarahkan ke halaman checkout untuk E-Suite BK Premium. Termasuk setup gratis dan garansi 30 hari!');
+                } else if (this.textContent.includes('Lihat Demo')) {
+                    // Demo action
+                    alert('Demo sistem akan dimulai! Anda akan melihat bagaimana sistem mendeteksi siswa prioritas secara real-time.');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply scroll animation to sections
+        document.querySelectorAll('section > div').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+
+        // Counter animation for statistics
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current) + (target >= 100 ? '+' : '%');
+            }, 20);
+        }
+
+        // Trigger counter animations when visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('[class*="font-bold"]:not(.animated)');
+                    counters.forEach(counter => {
+                        const text = counter.textContent;
+                        const number = parseInt(text.replace(/\D/g, ''));
+                        if (number > 0) {
+                            counter.classList.add('animated');
+                            animateCounter(counter, number);
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.grid').forEach(grid => {
+            if (grid.textContent.includes('150+') || grid.textContent.includes('80%')) {
+                statsObserver.observe(grid);
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989aae66b708fd89',t:'MTc1OTY0Mzg0My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
